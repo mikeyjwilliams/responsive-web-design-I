@@ -42,13 +42,19 @@ nav {
         margin-bottom: 0.50em;
         order: 1;
     }
-    .navigation {
-        order: 2;
-    }
     nav {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        order: 2;
     }
-    nav a {}
+    nav a {
+        display: block;
+        color: slategray;
+        border-bottom: 1px solid slategray;
+        padding: 0.50em 0;
+    }
+    nav a:first-child {
+        border-top: 1px solid slategray;
+    }
 }
