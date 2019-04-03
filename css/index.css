@@ -79,6 +79,14 @@ section {
     color: white;
 }
 
+address a {
+    color: black;
+}
+
+.copy {
+    text-align: center;
+}
+
 /*** end global styling ***/
 
 /** mobile and up styles **/
@@ -124,4 +132,7 @@ section {
         margin: 1.2em 0;
     }
     /*** img not responsive!!   ***/
+    .copy {
+        margin: 1em 0;
+    }
 }
