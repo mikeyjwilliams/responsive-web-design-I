@@ -91,7 +91,7 @@ address a {
 
 /** mobile and up styles **/
 
-@media(max-width: 599px) {
+@media(max-width: 767px) {
     header {
         margin-top: 0.50em;
         flex-direction: column;
@@ -137,7 +137,7 @@ address a {
     }
 }
 
-@media(min-width:600px) {
+@media(min-width:768px) {
     header {
         margin-top: 0.50em;
         flex-direction: column;
@@ -149,30 +149,30 @@ address a {
         order: 1;
     }
     nav {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
         order: 2;
     }
     nav a {
         display: block;
-        border-bottom: 1px solid slategray;
         padding: 0.50em 0;
     }
-    nav a:first-child {
-        border-top: 1px solid slategray;
-    }
-    .header-img {
-        display: none;
-    }
+    .header-img {}
     /** section centered in middle for mobile **/
     section {
-        justify-content: center;
-        align-items: center;
+        flex-direction: row;
         padding: 0 0.75em;
     }
     .top-section {
+        border-bottom: 2px solid black;
+        padding-bottom: 3em;
         margin-top: 1em;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        align-items: center;
+        justify-content: space-around;
     }
     .info {
         margin: 1.2em 0;
