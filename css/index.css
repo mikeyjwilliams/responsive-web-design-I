@@ -194,3 +194,49 @@ address a {
         margin: 1em 0;
     }
 }
+
+@media(min-width: 1024px) {
+    header {
+        margin-top: 1em;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo-link {
+        margin-bottom: 0.50em;
+        order: 1;
+    }
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        order: 2;
+    }
+    nav a {
+        display: block;
+        padding: 0.50em 0;
+    }
+    .header-img {
+        display: none;
+    }
+    section {
+        flex-direction: row;
+        padding: 0 0.75em;
+    }
+    .top-section {
+        padding-bottom: 3em;
+        margin-top: 1em;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .info {
+        margin: 1.2em 0.25em;
+    }
+    /*** img not responsive!!   ***/
+    .copy {
+        margin: 1em 0;
+    }
+}
