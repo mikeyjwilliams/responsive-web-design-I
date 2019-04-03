@@ -28,6 +28,37 @@ nav {
     display: flex;
 }
 
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.font {
+    text-align: center;
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /*** end global styling ***/
 
 /** mobile and up styles **/
