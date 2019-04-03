@@ -92,3 +92,9 @@ video {
     font: inherit;
     vertical-align: baseline;
 }
+
+/*** global styling  ***/
+
+.container {
+    max-width: 100%;
+}
