@@ -54,7 +54,6 @@ h1 {
 
 section {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .font {
@@ -124,6 +123,7 @@ address a {
         justify-content: center;
         align-items: center;
         padding: 0 0.75em;
+        flex-wrap: wrap;
     }
     .top-section {
         margin-top: 1em;
@@ -139,7 +139,7 @@ address a {
 
 @media(min-width:768px) {
     header {
-        margin-top: 0.50em;
+        margin-top: 1em;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -175,7 +175,7 @@ address a {
         justify-content: space-around;
     }
     .info {
-        margin: 1.2em 0;
+        margin: 1.2em 0.25em;
     }
     /*** img not responsive!!   ***/
     .copy {
