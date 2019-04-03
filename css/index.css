@@ -217,7 +217,8 @@ address a {
         padding: 0.50em 0;
     }
     .header-img {
-        display: none;
+        /** img appears in this view **/
+        display: block;
     }
     section {
         flex-direction: row;
@@ -236,7 +237,4 @@ address a {
         margin: 1.2em 0.25em;
     }
     /*** img not responsive!!   ***/
-    .copy {
-        margin: 1em 0;
-    }
 }
