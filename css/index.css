@@ -28,6 +28,11 @@ nav {
     display: flex;
 }
 
+nav a {
+    color: slategray;
+    text-decoration: none;
+}
+
 html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
@@ -63,6 +68,17 @@ section {
     align-items: center;
 }
 
+.btn {
+    background-color: white;
+    color: black;
+    padding: 8px 1.5em;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
 /*** end global styling ***/
 
 /** mobile and up styles **/
@@ -86,7 +102,6 @@ section {
     }
     nav a {
         display: block;
-        color: slategray;
         border-bottom: 1px solid slategray;
         padding: 0.50em 0;
     }
@@ -108,8 +123,5 @@ section {
     .info {
         margin: 1.2em 0;
     }
-    .header-img {
-        max-width: 100%;
-        min-width: 375px;
-    }
+    /*** img not responsive!!   ***/
 }
