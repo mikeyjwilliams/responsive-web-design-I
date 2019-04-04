@@ -1,0 +1,272 @@
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/*** global styling  ***/
+
+header {
+    display: flex;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: slategray;
+    text-decoration: none;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+p {
+    line-height: 1.2em;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+.middle-img {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+section {
+    display: flex;
+}
+
+.font {
+    text-align: center;
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    background-color: white;
+    color: black;
+    padding: 8px 1.5em;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+address a {
+    color: black;
+}
+
+.copy {
+    text-align: center;
+}
+
+.thin-br {
+    border-top: 2px solid black;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.pad {
+    padding-top: 1em;
+}
+
+/*** end global styling ***/
+
+/*** desktop size  ***/
+
+.container {
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+header {
+    margin-top: 1.5em;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.logo-link {
+    margin-bottom: 0.50em;
+    order: 2;
+}
+
+nav {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 85%;
+    order: 1;
+}
+
+.header-img {
+    /** img appears in this view **/
+    display: block;
+}
+
+section {
+    flex-direction: row;
+    padding: 0 0.75em;
+}
+
+.middle-img {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.top-section {
+    padding-bottom: 3em;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.info {
+    margin: 1.2em 0.25em;
+}
+
+/** mobile styles **/
+
+@media(max-width: 500px) {
+    .container {
+        width: 100%;
+    }
+    header {
+        margin-top: 0.50em;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo-link {
+        margin-bottom: 0.50em;
+        order: 1;
+    }
+    nav {
+        flex-direction: column;
+        order: 2;
+        width: 100%;
+    }
+    nav a {
+        display: block;
+        text-align: center;
+        border-bottom: 1px solid slategray;
+        padding: 0.50em 0;
+    }
+    nav a:first-child {
+        border-top: 1px solid slategray;
+    }
+    .header-img {
+        display: none;
+    }
+    /** section centered in middle for mobile **/
+    section {
+        justify-content: center;
+        align-items: center;
+        padding: 0 0.75em;
+        flex-wrap: wrap;
+    }
+    .top-section {
+        margin-top: 1em;
+        padding-bottom: 3em;
+    }
+    .info {
+        margin: 1.2em 0;
+    }
+    .middle-img {
+        max-width: 100%;
+    }
+    .copy {
+        margin: 1em 0;
+    }
+}
+
+/*** tablet size  ***/
+
+@media(max-width: 800px) {
+    .container {
+        max-width: 95%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    header {
+        margin-top: 1em;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo-link {
+        margin-bottom: 0.50em;
+        order: 1;
+    }
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        order: 2;
+    }
+    nav a {
+        display: block;
+        padding: 0.50em 0;
+    }
+    .header-img {
+        display: none;
+    }
+    section {
+        flex-direction: row;
+        padding: 0 0.75em;
+    }
+    .top-section {
+        padding-bottom: 3em;
+        margin-top: 1em;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .info {
+        margin: 1.2em 0.25em;
+    }
+    .middle-img {
+        margin-right: auto;
+        margin-left: auto;
+        display: inherit;
+        width: 100%;
+    }
+    .copy {
+        margin: 1em 0;
+    }
+}
