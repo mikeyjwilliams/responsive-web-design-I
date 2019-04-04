@@ -92,7 +92,7 @@ address a {
 
 .thin-br {
     border-top: 2px solid black;
-    width: 95%;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -239,10 +239,6 @@ address a {
         width: 85%;
         order: 1;
     }
-    nav a {
-        display: block;
-        padding: 0.50em 0;
-    }
     .header-img {
         /** img appears in this view **/
         display: block;
@@ -256,7 +252,7 @@ address a {
         margin-top: 1em;
         margin-left: auto;
         margin-right: auto;
-        width: 95%;
+        width: 100%;
         align-items: center;
         justify-content: space-around;
     }
