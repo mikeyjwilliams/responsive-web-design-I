@@ -103,9 +103,12 @@ address a {
 
 /*** end global styling ***/
 
-/** mobile and up styles **/
+/** mobile styles **/
 
 @media(max-width: 767px) {
+    .container {
+        max-width: 100%;
+    }
     header {
         margin-top: 0.50em;
         flex-direction: column;
@@ -156,7 +159,14 @@ address a {
     }
 }
 
+/*** tablet size  ***/
+
 @media(min-width:768px) {
+    .container {
+        max-width: 95%;
+        margin-right: auto;
+        margin-left: auto;
+    }
     header {
         margin-top: 1em;
         flex-direction: column;
@@ -207,7 +217,12 @@ address a {
     }
 }
 
+/*** desktop size  ***/
+
 @media(min-width: 1024px) {
+    .container {
+        max-width: 90%;
+    }
     header {
         margin-top: 1.5em;
         flex-direction: row;
