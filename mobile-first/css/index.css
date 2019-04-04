@@ -190,73 +190,74 @@ address a {
 
 /** mobile styles **/
 
-@media(max-width: 500px) {
-    .container {
-        width: 100%;
-    }
-
-    header {
-        margin-top: 0.50em;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .logo-link {
-        margin-bottom: 0.50em;
-        order: 1;
-    }
-
-    nav {
-        flex-direction: column;
-        order: 2;
-        width: 100%;
-    }
-
-    nav a {
-        display: block;
-        text-align: center;
-        border-bottom: 1px solid slategray;
-        padding: 0.50em 0;
-    }
-
-    nav a:first-child {
-        border-top: 1px solid slategray;
-    }
-
-    .header-img {
-        display: none;
-    }
-
-    /** section centered in middle for mobile **/
-    section {
-        justify-content: center;
-        align-items: center;
-        padding: 0 0.75em;
-        flex-wrap: wrap;
-    }
-
-    .top-section {
-        margin-top: 1em;
-        padding-bottom: 3em;
-    }
-
-    .info {
-        margin: 1.2em 0;
-    }
-
-    .middle-img {
-        max-width: 100%;
-    }
-
-    .copy {
-        margin: 1em 0;
-    }
+/* @media(min-width: 500px) { */
+.container {
+    width: 100%;
 }
+
+header {
+    margin-top: 0.50em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-link {
+    margin-bottom: 0.50em;
+    order: 1;
+}
+
+nav {
+    flex-direction: column;
+    order: 2;
+    width: 100%;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid slategray;
+    padding: 0.50em 0;
+}
+
+nav a:first-child {
+    border-top: 1px solid slategray;
+}
+
+.header-img {
+    display: none;
+}
+
+/** section centered in middle for mobile **/
+section {
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.75em;
+    flex-wrap: wrap;
+}
+
+.top-section {
+    margin-top: 1em;
+    padding-bottom: 3em;
+}
+
+.info {
+    margin: 1.2em 0;
+}
+
+.middle-img {
+    max-width: 100%;
+}
+
+.copy {
+    margin: 1em 0;
+}
+
+/* } */
 
 /*** tablet size  ***/
 
-@media(max-width: 800px) {
+@media(min-width: 500px) {
     .container {
         max-width: 95%;
         margin-right: auto;
@@ -323,58 +324,60 @@ address a {
 }
 
 /*** desktop size  ***/
+@media(min-width: 800px) {
 
-.container {
-    max-width: 90%;
-    margin-right: auto;
-    margin-left: auto;
-}
+    .container {
+        max-width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
 
-header {
-    margin-top: 1.5em;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-}
+    header {
+        margin-top: 1.5em;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
 
-.logo-link {
-    margin-bottom: 0.50em;
-    order: 2;
-}
+    .logo-link {
+        margin-bottom: 0.50em;
+        order: 2;
+    }
 
-nav {
-    flex-direction: row;
-    justify-content: space-around;
-    width: 85%;
-    order: 1;
-}
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 85%;
+        order: 1;
+    }
 
-.header-img {
-    /** img appears in this view **/
-    display: block;
-}
+    .header-img {
+        /** img appears in this view **/
+        display: block;
+    }
 
-section {
-    flex-direction: row;
-    padding: 0 0.75em;
-}
+    section {
+        flex-direction: row;
+        padding: 0 0.75em;
+    }
 
-.middle-img {
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-}
+    .middle-img {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
 
-.top-section {
-    padding-bottom: 3em;
-    margin-top: 1em;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    align-items: center;
-    justify-content: space-around;
-}
+    .top-section {
+        padding-bottom: 3em;
+        margin-top: 1em;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+    }
 
-.info {
-    margin: 1.2em 0.25em;
+    .info {
+        margin: 1.2em 0.25em;
+    }
 }
