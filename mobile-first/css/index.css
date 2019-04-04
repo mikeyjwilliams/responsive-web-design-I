@@ -297,7 +297,8 @@ section {
 
     section {
         flex-direction: row;
-        padding: 0 0.75em;
+        flex-wrap: nowrap;
+        padding: 0 1em;
     }
 
     .top-section {
