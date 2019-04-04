@@ -148,7 +148,7 @@ address a {
         margin: 1.2em 0;
     }
     /*** img not responsive!!   ***/
-    .header-img {
+    .middle-img {
         max-width: 100%;
     }
     .copy {
@@ -200,6 +200,7 @@ address a {
         margin-right: auto;
         margin-left: auto;
         display: inherit;
+        width: 100%;
     }
     .copy {
         margin: 1em 0;
