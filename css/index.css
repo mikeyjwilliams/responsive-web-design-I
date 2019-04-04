@@ -16,10 +16,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 /*** global styling  ***/
 
-.container {
-    max-width: 100%;
-}
-
 header {
     display: flex;
 }
@@ -52,8 +48,10 @@ h1 {
     font-size: 3.5em;
 }
 
-img {
-    max-width: 100%;
+.middle-img {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 section {
@@ -107,6 +105,8 @@ address a {
 
 .container {
     max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 header {
@@ -138,6 +138,12 @@ section {
     padding: 0 0.75em;
 }
 
+.middle-img {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .top-section {
     padding-bottom: 3em;
     margin-top: 1em;
@@ -156,7 +162,7 @@ section {
 
 @media(max-width: 500px) {
     .container {
-        max-width: 100%;
+        width: 100%;
     }
     header {
         margin-top: 0.50em;
@@ -209,7 +215,7 @@ section {
 
 /*** tablet size  ***/
 
-@media(max-width:800px) {
+@media(max-width: 800px) {
     .container {
         max-width: 95%;
         margin-right: auto;
