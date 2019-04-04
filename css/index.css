@@ -121,12 +121,15 @@ address a {
     }
     nav {
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        /* justify-content: center;
+        align-items: center; */
         order: 2;
+        width: 100%;
     }
     nav a {
         display: block;
+        text-align: center;
+        /* width: 100%; */
         border-bottom: 1px solid slategray;
         padding: 0.50em 0;
     }
