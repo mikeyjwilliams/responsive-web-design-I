@@ -190,7 +190,6 @@ address a {
 
 /** mobile styles **/
 
-/* @media(min-width: 500px) { */
 .container {
     width: 100%;
 }
@@ -253,8 +252,7 @@ section {
     margin: 1em 0;
 }
 
-/* } */
-
+/** end mobile styles **/
 /*** tablet size  ***/
 
 @media(min-width: 500px) {
