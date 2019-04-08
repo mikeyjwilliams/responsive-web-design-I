@@ -186,66 +186,76 @@ address a {
 
 /*** end global styling ***/
 
-/*** desktop size  ***/
+
+
+/** mobile styles **/
 
 .container {
-    max-width: 90%;
-    margin-right: auto;
-    margin-left: auto;
+    width: 100%;
 }
 
 header {
-    margin-top: 1.5em;
-    flex-direction: row;
+    margin-top: 0.50em;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .logo-link {
     margin-bottom: 0.50em;
-    order: 2;
-}
-
-nav {
-    flex-direction: row;
-    justify-content: space-around;
-    width: 85%;
     order: 1;
 }
 
-.header-img {
-    /** img appears in this view **/
-    display: block;
-}
-
-section {
-    flex-direction: row;
-    padding: 0 0.75em;
-}
-
-.middle-img {
+nav {
+    flex-direction: column;
+    order: 2;
     width: 100%;
-    margin-right: auto;
-    margin-left: auto;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid slategray;
+    padding: 0.50em 0;
+}
+
+nav a:first-child {
+    border-top: 1px solid slategray;
+}
+
+.header-img {
+    display: none;
+}
+
+/** section centered in middle for mobile **/
+section {
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.75em;
+    flex-wrap: wrap;
 }
 
 .top-section {
-    padding-bottom: 3em;
     margin-top: 1em;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    align-items: center;
-    justify-content: space-around;
+    padding-bottom: 3em;
 }
 
 .info {
-    margin: 1.2em 0.25em;
+    margin: 1.2em 0;
 }
 
+.middle-img {
+    max-width: 100%;
+}
+
+.copy {
+    margin: 1em 0;
+}
+
+/** end mobile styles **/
 /*** tablet size  ***/
 
-@media(max-width: 800px) {
+@media(min-width: 500px) {
     .container {
         max-width: 95%;
         margin-right: auto;
@@ -274,6 +284,11 @@ section {
     nav a {
         display: block;
         padding: 0.50em 0;
+        border-bottom: none;
+    }
+
+    nav a:first-child {
+        border-top: none;
     }
 
     .header-img {
@@ -282,7 +297,8 @@ section {
 
     section {
         flex-direction: row;
-        padding: 0 0.75em;
+        flex-wrap: nowrap;
+        padding: 0 1em;
     }
 
     .top-section {
@@ -311,67 +327,61 @@ section {
     }
 }
 
-/** mobile styles **/
-@media(max-width: 500px) {
+/*** desktop size  ***/
+@media(min-width: 800px) {
+
     .container {
-        width: 100%;
+        max-width: 90%;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     header {
-        margin-top: 0.50em;
-        flex-direction: column;
+        margin-top: 1.5em;
+        flex-direction: row;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
     }
 
     .logo-link {
         margin-bottom: 0.50em;
-        order: 1;
+        order: 2;
     }
 
     nav {
-        flex-direction: column;
-        order: 2;
-        width: 100%;
-    }
-
-    nav a {
-        display: block;
-        text-align: center;
-        border-bottom: 1px solid slategray;
-        padding: 0.50em 0;
-    }
-
-    nav a:first-child {
-        border-top: 1px solid slategray;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 85%;
+        order: 1;
     }
 
     .header-img {
-        display: none;
+        /** img appears in this view **/
+        display: block;
     }
 
-    /** section centered in middle for mobile **/
     section {
-        justify-content: center;
-        align-items: center;
+        flex-direction: row;
         padding: 0 0.75em;
-        flex-wrap: wrap;
-    }
-
-    .top-section {
-        margin-top: 1em;
-        padding-bottom: 3em;
-    }
-
-    .info {
-        margin: 1.2em 0;
     }
 
     .middle-img {
-        max-width: 100%;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
     }
 
-    .copy {
-        margin: 1em 0;
+    .top-section {
+        padding-bottom: 3em;
+        margin-top: 1em;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .info {
+        margin: 1.2em 0.25em;
     }
 }
